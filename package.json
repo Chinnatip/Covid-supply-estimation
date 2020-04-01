@@ -1,0 +1,24 @@
+{
+  "name": "covid-supply-estimator-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.1.0",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "serverless-offline": "^3.25.6"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.272.1",
+    "moment": "^2.22.2",
+    "serverless-offline-python": "^3.22.1",
+    "serverless-python-requirements": "^5.1.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
