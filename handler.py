@@ -7,16 +7,11 @@ def supply_estimation(event, context):
     load_data = json.loads(event['body'])
 
     # Destructuring POST data
-    population, cases, hospital_info = [load_data[k]
-                                        for k in ('population', 'cases', 'hospital_info')]
-    mild, severe, critical = [cases[k]
-                              for k in ('mild', 'severe', 'critical')]
-
-    hospital_name, contact_email = [hospital_info[k]
-                                    for k in ('name', 'email')]
+    population, case_mild, case_severe, case_critical, doubling_time, hospital_name, hospital_region, contact_email, writing_date = [load_data[k]
+                                                                                                                                     for k in ("population", "case_mild", "case_severe", "case_critical", "doubling_time", "hospital_name", "hospital_region", "contact_email", "writing_date")]
 
     # calculate total cases
-    total_case = mild + severe + critical
+    total_case = case_mild + case_severe + case_critical
 
     # Prepare response
     body = {
