@@ -14,7 +14,7 @@
     "serverless-offline": "^3.25.6"
   },
   "dependencies": {
-    "aws-sdk": "^2.272.1",
+    "aws-sdk": "^2.814.0",
     "moment": "^2.22.2",
     "serverless-offline-python": "^3.22.1",
     "serverless-python-requirements": "^5.1.0"
